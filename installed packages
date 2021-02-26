@@ -1,0 +1,7 @@
+npm i vue-chat-scroll@alpha (Vue chat scroll)
+
+import VueChatScroll from 'vue-chat-scroll';
+
+Vue.use(VueChatScroll);
+
+new Vue(...);
