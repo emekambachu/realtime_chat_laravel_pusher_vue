@@ -1,7 +1,12 @@
 <template>
     <!--All contents must be in one element-->
     <div>
-        <li class="list-group-item" :class="className"><slot></slot></li>
+        <li class="list-group-item" :class="className"><slot></slot>
+            <span class="chat-time">{{ time }}</span>
+            <span class="float-right">
+                <button class="btn btn-sm btn-danger">delete</button>
+            </span>
+        </li>
         <small class="badge float-right mb-3" :class="badgeClass">{{ user }}</small>
     </div>
 </template>
@@ -11,7 +16,8 @@
 
         props:[
           'color',
-          'user'
+          'user',
+          'time'
         ],
 
         computed:{
@@ -28,3 +34,11 @@
         }
     }
 </script>
+
+<style>
+    .chat-time{
+        font-size: 8px;
+        padding-left: 2px;
+        color: #000000;
+    }
+</style>

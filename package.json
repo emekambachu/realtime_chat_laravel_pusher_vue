@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "v-toaster": "^1.0.3",
         "vue": "^2.6.12",
         "vue-chat-scroll": "^2.0.0-alpha.4"
     }
